@@ -173,8 +173,8 @@ function animate() {
     player.update()
     enemy.update()
 
-    player.velocity.x = 0
-    enemy.velocity.x = 0
+    player.velocity.x = 2
+    enemy.velocity.x = 2
 
     //Player movement
 

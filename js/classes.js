@@ -16,7 +16,7 @@ class Sprite {
         c.drawImage(
             this.image,
             this.frameCurrent * (this.image.width / this.frameMax),
-            2,
+            0,
             this.image.width / this.frameMax,
             this.image.height,
             this.position.x - this.offset.x,
@@ -104,7 +104,7 @@ class Fighter extends Sprite {
 
         // Gravity function
         if (this.position.y + this.height + this.velocity.y >= canvas.height - 98) {
-            this.velocity.y = 0
+            this.velocity.y = 2
         } else this.velocity.y += gravity
     }
 
