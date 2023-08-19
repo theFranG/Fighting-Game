@@ -116,11 +116,6 @@ class Fighter extends Sprite {
         } else this.velocity.y += gravity
     }
 
-    attack() {
-        this.switchSprite('attack1')
-        this.isAttacking = true
-    }
-
     takeHit() {
         this.health -= 15
 
@@ -187,4 +182,8 @@ class Fighter extends Sprite {
                 break
         }
     }
+            attack() {
+                this.switchSprite('attack1')
+                this.isAttacking = true
+            }
 }
