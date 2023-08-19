@@ -68,7 +68,7 @@ const player = new Fighter({
             frameMax: 2
         },
         attack1: {
-            imageSrc: './assets/SamuraiMack/Attack1.png',
+            imageSrc: './assets/SamuraiMack/Attack2.png',
             frameMax: 6
         }, takeHit: {
             imageSrc: './assets/SamuraiMack/Take hit - white silhouette.png',
