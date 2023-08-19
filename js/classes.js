@@ -16,7 +16,7 @@ class Sprite {
         c.drawImage(
             this.image,
             this.frameCurrent * (this.image.width / this.frameMax),
-            0,
+            2,
             this.image.width / this.frameMax,
             this.image.height,
             this.position.x - this.offset.x,
@@ -80,7 +80,7 @@ class Fighter extends Sprite {
         this.health = 100
         this.frameCurrent = 0
         this.framesElapsed = 0
-        this.framesHold = 10
+        this.framesHold = 5
         this.sprites = sprites
         this.dead = false
 
