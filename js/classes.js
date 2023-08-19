@@ -13,19 +13,17 @@ class Sprite {
         this.offset = offset
     }
     draw() {
-        if (this.loaded) { // Verifica si la imagen está cargada
-            c.drawImage(
-                this.image,
-                this.frameCurrent * (this.image.width / this.frameMax),
-                0,
-                this.image.width / this.frameMax,
-                this.image.height,
-                this.position.x - this.offset.x,
-                this.position.y - this.offset.y,
-                (this.image.width / this.frameMax) * this.scale,
-                this.image.height * this.scale
-            );
-        }
+        c.drawImage(
+            this.image,
+            this.frameCurrent * (this.image.width / this.frameMax),
+            0,
+            this.image.width / this.frameMax,
+            this.image.height,
+            this.position.x - this.offset.x,
+            this.position.y - this.offset.y,
+            (this.image.width / this.frameMax) * this.scale,
+            this.image.height * this.scale
+        )
     }
 
     animateFrame() {
@@ -100,6 +98,14 @@ class Fighter extends Sprite {
             this.animateFrame()
         this.attackBox.position.x = this.position.x + this.attackBox.offset.x
         this.attackBox.position.y = this.position.y
+
+        // Draw the attack box
+        // c.fillRect(
+        //     this.attackBox.position.x,
+        //     this.attackBox.position.y,
+        //     this.attackBox.width,
+        //     this.attackBox.height
+        // )
 
         this.position.x += this.velocity.x
         this.position.y += this.velocity.y
