@@ -80,7 +80,7 @@ class Fighter extends Sprite {
         this.health = 100
         this.frameCurrent = 0
         this.framesElapsed = 0
-        this.framesHold = 5
+        this.framesHold = 6
         this.sprites = sprites
         this.dead = false
 
