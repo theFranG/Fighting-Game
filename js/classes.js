@@ -80,7 +80,7 @@ class Fighter extends Sprite {
         this.health = 100
         this.frameCurrent = 0
         this.framesElapsed = 0
-        this.framesHold = 5
+        this.framesHold = 10
         this.sprites = sprites
         this.dead = false
 
@@ -98,14 +98,6 @@ class Fighter extends Sprite {
             this.animateFrame()
         this.attackBox.position.x = this.position.x + this.attackBox.offset.x
         this.attackBox.position.y = this.position.y
-
-        // Draw the attack box
-         c.fillRect(
-             this.attackBox.position.x,
-             this.attackBox.position.y,
-             this.attackBox.width,
-             this.attackBox.height
-         )
 
         this.position.x += this.velocity.x
         this.position.y += this.velocity.y
