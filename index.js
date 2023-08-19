@@ -71,7 +71,7 @@ const player = new Fighter({
             imageSrc: './AttackMack.png',
             frameMax: 6
         }, takeHit: {
-            imageSrc: './Take hit - white silhouette.png',
+            imageSrc: './TakeHit.png',
             frameMax: 4
         }, death: {
             imageSrc: './assets/samuraiMack/Death.png',
