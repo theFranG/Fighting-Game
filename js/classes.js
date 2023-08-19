@@ -117,7 +117,7 @@ class Fighter extends Sprite {
     }
 
     attack() {
-        this.switchSprite('Attack1.png')
+        this.switchSprite('attack1')
         this.isAttacking = true
     }
 
